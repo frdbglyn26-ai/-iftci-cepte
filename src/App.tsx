@@ -5,6 +5,7 @@ import HomePage from '@/pages/HomePage';
 import ProductsPage from '@/pages/ProductsPage';
 import CropDetailPage from '@/pages/CropDetailPage';
 import GuidePage from '@/pages/GuidePage';
+import CalendarPage from '@/pages/CalendarPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/urunler" element={<ProductsPage />} />
             <Route path="/urun/:id" element={<CropDetailPage />} />
             <Route path="/tarim-rehberi" element={<GuidePage />} />
+            <Route path="/takvim" element={<CalendarPage />} />
           </Routes>
         </main>
         <Footer />
