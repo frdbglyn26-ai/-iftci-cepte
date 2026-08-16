@@ -1,15 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import {
-  ArrowLeft,
-  CalendarDays,
-  Mountain,
-  Droplets,
-  Leaf,
-  Bug,
-  ShieldAlert,
-  Wheat,
-  AlertTriangle,
-} from 'lucide-react';
+import { ArrowLeft, CalendarDays, Mountain, Droplets, Leaf, Bug, ShieldAlert, Wheat, TriangleAlert as AlertTriangle } from 'lucide-react';
 import InfoCard, { InfoRow } from '@/components/InfoCard';
 import GrowingTimeline from '@/components/GrowingTimeline';
 import { getCropById } from '@/data/crops';

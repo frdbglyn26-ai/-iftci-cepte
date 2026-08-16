@@ -1,16 +1,5 @@
 import { useState } from 'react';
-import {
-  Sprout,
-  Mountain,
-  Droplets,
-  Leaf,
-  Bug,
-  Shield,
-  Wheat,
-  ChevronRight,
-  ArrowLeft,
-  AlertTriangle,
-} from 'lucide-react';
+import { Sprout, Mountain, Droplets, Leaf, Bug, Shield, Wheat, ChevronRight, ArrowLeft, TriangleAlert as AlertTriangle } from 'lucide-react';
 import {
   guideCategories,
   guideArticles,
