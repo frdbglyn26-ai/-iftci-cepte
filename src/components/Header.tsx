@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/', label: 'Ana Sayfa' },
   { to: '/urunler', label: 'Ürünler' },
   { to: '/tarim-rehberi', label: 'Tarım Rehberi' },
+  { to: '/takvim', label: 'Takvim' },
 ];
 
 export default function Header() {

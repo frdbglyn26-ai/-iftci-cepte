@@ -56,6 +56,15 @@ export default function CropDetailPage() {
           <p className="text-base leading-relaxed text-neutral-600 sm:text-lg">
             {crop.shortDescription}
           </p>
+          <div>
+            <Link
+              to={`/takvim?crop=${crop.id}`}
+              className="inline-flex items-center gap-2 rounded-xl bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-card transition-all duration-200 hover:bg-primary-800 hover:shadow-card-hover"
+            >
+              <CalendarDays className="h-4 w-4" />
+              Takvimimi Oluştur
+            </Link>
+          </div>
         </div>
       </div>
 
