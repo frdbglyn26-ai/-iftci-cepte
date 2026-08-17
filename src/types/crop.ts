@@ -18,6 +18,59 @@ export interface TimelineStage {
   description: string;
 }
 
+export interface PotLightInfo {
+  requirement: string;
+  placement: string;
+}
+
+export interface PotWateringInfo {
+  requirement: string;
+  moistureCheck: string;
+  overwatering: string;
+}
+
+export interface PotContainerInfo {
+  size: string;
+  drainage: string;
+  repotting: string;
+}
+
+export interface PotSoilInfo {
+  type: string;
+  drainage: string;
+}
+
+export interface PotEnvironmentInfo {
+  temperature: string;
+  conditions: string;
+}
+
+export interface PotFertilizationInfo {
+  schedule: string;
+  stages: string;
+}
+
+export interface PotCareInfo {
+  pruning: string;
+  leafCare: string;
+  general: string;
+}
+
+export interface PotGrowingInfo {
+  light: PotLightInfo;
+  watering: PotWateringInfo;
+  container: PotContainerInfo;
+  soil: PotSoilInfo;
+  environment: PotEnvironmentInfo;
+  fertilization: PotFertilizationInfo;
+  diseases: DiseaseInfo[];
+  pests: PestInfo[];
+  care: PotCareInfo;
+  timeline: TimelineStage[];
+}
+
+export type GrowingMode = 'field' | 'pot';
+
 export interface Crop {
   id: string;
   name: string;
@@ -25,6 +78,7 @@ export interface Crop {
   image: string;
   category: string;
   shortDescription: string;
+  growingModes: GrowingMode[];
   planting: {
     period: string;
     temperature: string;
@@ -56,4 +110,5 @@ export interface Crop {
     general: string;
   };
   timeline: TimelineStage[];
+  potGrowing?: PotGrowingInfo;
 }
